@@ -1,4 +1,7 @@
 +++
 title = "Home"
 +++
-# vertal &#11; tab
+
+The personal blog of Noah Pederson.
+
+Also see <https://packetlost.dev>

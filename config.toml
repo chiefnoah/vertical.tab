@@ -1,6 +1,9 @@
 # The URL the site will be built for
 base_url = "https://verticaltab.dev"
 
+title = "vertical.tab"
+description = "Tech and sadness."
+
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
@@ -8,15 +11,37 @@ compile_sass = true
 build_search_index = true
 
 theme = "hook"
+# Other themes
+# theme = "no-style-please" # https://www.getzola.org/themes/no-style-please/
+# theme = "lightspeed" # https://www.getzola.org/themes/lightspeed/
+# theme = "archie-zola" # https://www.getzola.org/themes/archie-zola/
+# theme = "apollo" # https://www.getzola.org/themes/apollo/
 
 [markdown]
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = true
+render_emoji = true
+external_links_target_blank = true
+external_links_follow  = true
+external_links_no_referrer = true
+
+# TODO: get Tokyo Night in here ❤️
+highlight_theme = "nord"
+
+[search]
+
+include_title = true
+include_description = true
+include_path = false
+include_content = true
 
 [extra]
 # Put all your custom variables here
 links = [
-    { title = "Vertical\t⭿\tTab", href = "https://verticaltab.dev" },
-
+    { title = "mail", href = "mailto:noah@verticaltab.dev" },
+    { title = "github", href = "https://github.com/chiefnoah" },
+    { title = "gitlab", href = "https://gitlab.com/npederson" },
+    { title = "sourcehut", href = "https://git.sr.ht/~chiefnoah" },
+    { title = "linkedin", href = "https://www.linkedin.com/in/noah-pederson-bb4b26b6/" },
 ]
